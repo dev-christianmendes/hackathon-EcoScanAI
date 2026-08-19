@@ -101,7 +101,7 @@ uvicorn app.main:app --reload --port 8000
 ```
 
 O backend estará disponível em: http://localhost:8000  
-Documentação interativa: http://localhost:8000/docs
+Documentação interativa em: http://localhost:8000/docs
 
 ---
 
