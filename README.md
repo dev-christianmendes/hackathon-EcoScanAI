@@ -10,7 +10,7 @@
 [![Google Vision](https://img.shields.io/badge/Google%20Vision-API-4285F4?style=flat-square&logo=google)](https://cloud.google.com/vision)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38BDF8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 
-**EcoScan AI** usa visão computacional para identificar materiais recicláveis em tempo real, classificando resíduos em 6 categorias e fornecendo instruções precisas de descarte e higienização.
+**EcoScan AI** utiliza visão computacional para identificar materiais recicláveis em tempo real, classificando resíduos em 6 categorias e fornecendo instruções precisas de descarte e higienização.
 
 [Demo ao Vivo](#demo-mode) · [Instalação Rápida](#instalação) · [Arquitetura](#arquitetura)
 
