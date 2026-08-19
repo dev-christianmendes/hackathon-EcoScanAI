@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --eco-dark: #0F172A;
+  --eco-card: #1E293B;
+  --eco-border: #334155;
+  --eco-green: #22C55E;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--eco-dark);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--eco-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--eco-border);
+  border-radius: 9999px;
+}
+
+/* Hide video controls on mobile */
+video::-webkit-media-controls {
+  display: none !important;
+}
+video {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Confidence gauge animation */
+@keyframes gauge-fill {
+  from { stroke-dashoffset: 251; }
+}
+
+/* Subtle floating particles */
+@keyframes float-up {
+  0% { transform: translateY(0) scale(1); opacity: 0.3; }
+  100% { transform: translateY(-100vh) scale(0); opacity: 0; }
+}
+
+/* Shimmer effect for loading */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(34,197,94,0.08) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Step completion checkmark */
+@keyframes check-in {
+  0% { transform: scale(0) rotate(-45deg); }
+  50% { transform: scale(1.2) rotate(0deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.animate-check-in {
+  animation: check-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
